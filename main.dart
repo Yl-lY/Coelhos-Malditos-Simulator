@@ -1,13 +1,9 @@
 var mes = 1;
-var dia = 0;
 double coelhosAdultos = 2;
 double coelhosJovens = 0;
 
 void main() {
-  while (mes < 16) {
-    dia += 1;
-    if (dia == 30) {
-
+  while (mes < 25) {
       coelhosAdultos += coelhosJovens;
       coelhosJovens = coelhosAdultos;
       if (mes > 12) {
@@ -21,7 +17,5 @@ void main() {
       }
 
       mes += 1;
-      dia = 0;
-    }
   }
 }
